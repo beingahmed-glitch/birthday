@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bubuuu 💗</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0ef, #eadfff, #fff0f6);
+  color: #805078;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 28px 20px;
+  background: rgba(255,255,255,.85);
+  border: 2px solid white;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px #bd8dbb55;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  color: #d64d91;
+  margin: 16px 0;
+}
+
+h2 {
+  color: #a45b9c;
+  margin: 18px 0;
+}
+
+p {
+  line-height: 1.9;
+  margin: 15px 0;
+}
+
+.cake {
+  font-size: 75px;
+  animation: bounce 2s infinite;
+}
+
+button {
+  background: #d85c9b;
+  color: white;
+  border: none;
+  padding: 13px 23px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d85c9b44;
+  transition: .3s;
+}
+
+button:hover {
+  background: #b83d7d;
+  transform: translateY(-3px);
+}
+
+.page {
+  display: none;
+  animation: fade .8s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+.poetry {
+  color: #97528d;
+  font-size: 1rem;
+  line-height: 2.2;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+.footer {
+  color: #b17ca7;
+  font-size: .85rem;
+  margin-top: 25px;
+}
+
+.decor {
+  position: fixed;
+  top: -35px;
+  z-index: 1;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="cake">🎂</div>
+    <p>💌 A tiny surprise for someone truly special 💌</p>
+
+    <h1>HAPPY BIRTHDAY!</h1>
+    <h2>💗 BUBUUU 💗</h2>
+
+    <p>
+      Today is all about celebrating you,
+      your beautiful personality, your laughter,
+      and the amazing friend you are! 🌸
+    </p>
+
+    <button onclick="nextPage(2)">
+      Open Your Surprise 🎁
+    </button>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="cake">🫶💗</div>
+
+    <h1>A Little Note For You</h1>
+
+    <p>
+      Some friendships are built on the simplest things:
+      endless conversations, silly jokes, mutual trust,
+      and being there for each other.
+      <br><br>
+      And that's what makes this friendship so special.
+      No big promises, no expectations — just genuine
+      care, respect, laughter, and unforgettable memories.
+      <br><br>
+      Keep being the wonderful person you are, Bubuuu! 🌷
+    </p>
+
+    <button onclick="nextPage(3)">
+      Read Your Birthday Poem 🌸
+    </button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <h1>🌸 A Friendship Poem 🌸</h1>
+
+    <div class="poetry">
+      Some friends make ordinary days shine bright,<br>
+      Turning little moments into pure delight.<br><br>
+
+      Through silly talks and laughter that never ends,<br>
+      Life feels a little brighter with genuine friends.<br><br>
+
+      No perfect words, no promises to say,<br>
+      Just trust and kindness along the way.<br><br>
+
+      May happiness follow wherever you go,<br>
+      May your dreams take wings and beautifully grow.<br><br>
+
+      May every sunrise bring a reason to smile,<br>
+      And may life treat you kindly all the while.<br><br>
+
+      So here's to the memories, the laughter, the fun,<br>
+      And a beautiful friendship that shines like the sun! 💗
+    </div>
+
+    <p>Here's to more laughter and unforgettable moments! 😂</p>
+
+    <button onclick="nextPage(4)">
+      One Last Surprise 💌
+    </button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="page4">
+    <div class="cake">🎂🎀🌷</div>
+
+    <h1>HAPPY BIRTHDAY BUBUUU!</h1>
+
+    <h2>💗 Keep Shining, Keep Smiling 💗</h2>
+
+    <p>
+      May this new chapter bring you endless happiness,
+      exciting opportunities, beautiful memories,
+      and success in everything you do.
+      <br><br>
+      May you always be surrounded by people who value you,
+      respect you, and genuinely wish the best for you.
+      <br><br>
+      Thank you for being such a lovely friend.
+      Here's to more laughs, more memories,
+      and countless funny moments! 🫶
+    </p>
+
+    <button onclick="showMessage()">
+      One More Thing 💌
+    </button>
+
+    <p id="finalMessage" class="hidden">
+      Never stop being YOU, Bubuuu! 💗<br>
+      Stay blessed, stay happy, and keep spreading
+      your amazing personality everywhere! 🌸
+    </p>
+
+    <h2>Lots of Best Wishes! 🌷</h2>
+
+    <button onclick="nextPage(1)">
+      Read Again ↻
+    </button>
+  </section>
+
+  <div class="footer">
+    Made with friendship, laughter and lots of love 💗
+  </div>
+
+</main>
+
+<script>
+function nextPage(number) {
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+  });
+
+  document.getElementById('page' + number).classList.add('active');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function showMessage() {
+  document.getElementById('finalMessage').classList.remove('hidden');
+
+  for (let i = 0; i < 30; i++) {
+    setTimeout(createDecoration, i * 100);
+  }
+}
+
+function createDecoration() {
+  const item = document.createElement('div');
+
+  const decorations = [
+    '💗', '🌸', '✨', '🎀', '💕', '⭐', '🦋'
+  ];
+
+  item.className = 'decor';
+  item.textContent =
+    decorations[Math.floor(Math.random() * decorations.length)];
+
+  item.style.left = Math.random() * 100 + 'vw';
+  item.style.fontSize = (18 + Math.random() * 20) + 'px';
+  item.style.animationDuration = (3 + Math.random() * 4) + 's';
+
+  document.body.appendChild(item);
+
+  setTimeout(() => item.remove(), 7000);
+}
+
+setInterval(createDecoration, 850);
+</script>
+
+</body>
+</html>
